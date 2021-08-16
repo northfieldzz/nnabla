@@ -42,8 +42,8 @@ RUN eval ${APT_OPTS} \
     && cd / \
     && rm -rf /tmp/*
 
-RUN pip install ${PIP_INS_OPTS} setuptools
-RUN pip install ${PIP_INS_OPTS} --upgrade pip
+RUN pip install ${PIP_INS_OPTS} setuptools==44.1.1
+RUN pip install ${PIP_INS_OPTS} --upgrade pip==20.3.4
 RUN pip install ${PIP_INS_OPTS} six
 RUN pip install ${PIP_INS_OPTS} PyYAML
 RUN pip install ${PIP_INS_OPTS} Mako
